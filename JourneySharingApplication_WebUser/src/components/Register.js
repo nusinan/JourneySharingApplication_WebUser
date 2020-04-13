@@ -71,27 +71,27 @@ export default class Register extends Component {
          //let password error
          const {name,surname,password,passwordConfirm,email,date,gender,policy,genderString} = this.state
          if(!this.state.name ){
-             nameError ="Please enter your name"; 
+             nameError ="Lütfen İsminizi giriniz"; 
          }
-         if(!this.state.surname ){
-             surnameError ="please enter your surname";
+         if(!this.state.surname.match(/^[a-z\d]{5,12}$/) ){
+             surnameError ="Lütfen Soyadınızı giriniz";
          }
          if(!this.state.password.match(/^[#\w@_-]{6,20}$/) ){
-             passwordError ="Your password must contain lowercase, uppercase, numbers, and special characters. Also, your password has at least 6 characters. ";
+             passwordError ="Şifreniz küçük harf, büyük harf, sayı ve özel karakter içermelidir. Ayrıca, şifreniz en az 6 karakter olmalıdır.";
          }
          if(!this.state.policy){
-             policyError="accept user terms to become a member";
+             policyError="üye olmak için kullanıcı şartlarını kabul ediniz";
          }
          
      // perform all neccassary validations
          if (this.state.password !== passwordConfirm) {
-             passwordConfirmError =" The passwords you entered do not match each other";
+             passwordConfirmError =" Girdiğiniz parolalar birbiri ile eşleşmiyor";
          } 
         if(!this.state.email.match(/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/)){
-             emailError = 'Please enter a valid e-mail address like example@ypu.com';
+             emailError = 'Lütfen geçerli bir Mail adresi giriniz   example@ypu.com';
         }
         if(!this.state.date){
-         dateError ="Please enter your date of birth";
+         dateError ="Lütfen doğum tarihinizi giriniz";
          }
          if(this.state.date){
              
@@ -107,13 +107,13 @@ export default class Register extends Component {
          {
              //if( mounthDiffrence<0){
                  
-                 ageError = " Unfortunately, you cannot register for the application under the age of 16.";
+                 ageError = " malesef yaşınız 16 den küçük oduğ için uygulamaya kayıt olamassınız";
                  //          }
          }
              //}
          }
          if(!this.state.genderString){
-             genderError ="Specify gender";
+             genderError ="Cinsiyet belirtiniz";
              }
             
         if(emailError || nameError || surnameError || passwordError || dateError || passwordConfirmError || genderError || ageError|| policyError){
@@ -135,7 +135,7 @@ export default class Register extends Component {
             this.setState(initialState);
            
            let id="";
-            fetch('https://cors-anywhere.herokuapp.com/https://journey-sharing-application.herokuapp.com/user/save',{
+            fetch('http://25.109.92.209:8081/user/save',{
                 method: 'POST',
                 body: JSON.stringify({
                 name: this.state.name,
@@ -146,7 +146,8 @@ export default class Register extends Component {
                 birthday:this.state.date,
                 }),
                 headers: {
-                "Content-type": "application/json; charset=UTF-8"
+                "Content-type": "application/json; charset=UTF-8",
+                
                 }
             })
             .then(response => response.json())
@@ -173,7 +174,7 @@ export default class Register extends Component {
                                 <div className="mbr-table-cell">
                                     <ul className="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
                                     <li className="nav-item"><a  ><Link className="nav-link link mbr-editable-menu-item" to = "/"><h6><b>HomePage</b></h6></Link></a></li>
-                                        <li className="nav-item"><a><Link className="nav-link link mbr-editable-menu-item" to = "/searchTrip"><h6><b>Search Journey</b></h6></Link></a></li>
+                                        <li className="nav-item"><a><Link className="nav-link link mbr-editable-menu-item" to = "/searchTrip"><h6><b>Search Trip</b></h6></Link></a></li>
                                         <li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/login">Login</Link></a></li>
                                     </ul>
                                 </div>
@@ -196,7 +197,7 @@ export default class Register extends Component {
                             <div ><label className=" form-label  er input-group-append">{this.state.surnameError}</label></div>
                         </div>
                         <div className="form-group">
-                                <input type="text" className="form-control form-control-lg" name='email'  placeholder="E-Mail" value={this.state.email} onChange={this.handleChange}/>
+                                <input type="text" className="form-control form-control-lg" name='email'  placeholder="E-Posta" value={this.state.email} onChange={this.handleChange}/>
                                 <div><label className=" form-label er input-group-append">{this.state.emailError}</label></div>
                         </div>
                         <div className="form-group">
@@ -204,7 +205,7 @@ export default class Register extends Component {
                             <div><label className=" form-label er  input-group-append">{this.state.passwordError}</label></div>
                         </div>
                         <div className="form-group">
-                            <input type="password" className="form-control  form-control-lg "  name='passwordConfirm'  placeholder="Confirm Password"  onChange={this.handleChange}/>
+                            <input type="password" className="form-control  form-control-lg "  name='passwordConfirm'  placeholder="Password Again"  onChange={this.handleChange}/>
                             <div><label className=" form-label er  input-group-append">{this.state.passwordConfirmError}</label></div>
                         </div>
                         
@@ -232,7 +233,7 @@ export default class Register extends Component {
                         <div className="forgot-link form-group d-flex justify-content-between align-items-center">
                                     <div className="form-check">
                                     <input type="checkbox" className="form-check-input" name="policy" value="checked"  onChange={this.handleChange} id="remember" />
-                                    <label className="form-check-label" for="remember" style={{color: 'rgb(255, 255, 255)'}}>I Accept All<a href="" style={{color: 'rgb(229, 255, 0)'}}>  User Terms</a></label>
+                                    <label className="form-check-label" for="remember" style={{color: 'rgb(255, 255, 255)'}}>I Accept All <a href="" style={{color: 'rgb(229, 255, 0)'}}> User Condition </a> Policies</label>
                                     <div><label className=" form-label er  input-group-append">{this.state.policyError}</label></div> 
                                 </div>
                                 

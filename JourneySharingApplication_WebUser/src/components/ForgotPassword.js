@@ -3,11 +3,12 @@ import img1 from '../assets/images/f-mwo-dznni-averie-woodard-2000x2000.jpg';
 import {BrowserRouter as Router,Link,Redirect} from "react-router-dom";
 import {YpuProvider} from '../context';
 
+
 const initialState ={
 }
- class Login extends Component {
+ class ForgotPassword extends Component {
    
-     constructor(props){
+    /* constructor(props){
         const token = localStorage.getItem('jwt');
         let loggedIn =true;
         if(token==null){
@@ -16,7 +17,6 @@ const initialState ={
         }
         super(props);
         const initialState ={
-            loginError:"",
             email:"",
             password:"",
             emailError:"",
@@ -26,11 +26,9 @@ const initialState ={
         }
      this.handleChange=this.handleChange.bind(this);
      this.handleSubmit=this.handleSubmit.bind(this);
-     
-     }
+     }*/
      
     state = initialState;
-  
         
     handleChange = event =>{
         const isCheckbox = event.target.type === "checkbox";
@@ -44,69 +42,49 @@ const initialState ={
     validate = () =>{
      
         let emailError = "";
-        let passwordError = "";
-        let loginError= "";
     
          //let password error
-         const {password,email,loggedIn}=this.state;
+         const {email}=this.state
        
-         if(!password.match(/^[#\w@_-]{6,20}$/) ){
-             passwordError ="malesef geçersiz şifre girdiniz";
-         }
+         
         
         if(!email.match(/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/)){
              emailError = 'lütfen geçerli bir mail adresi giriniz   example@ypu.com';
         }
-        if(loggedIn && !emailError && !passwordError){
-            loginError="Sistemimizde Böyle Bir Kullanıcı bulunamadı lütfen şifrenizi ve mail adresinizi tekrar kontrol ediniz";
-            this.setState({loginError})
-            }
-        if(emailError  || passwordError ){
-         this.setState({emailError,passwordError});
+        if(emailError   ){
+         this.setState({emailError});
          return false;
         }
         return true;
      };
      handleSubmit = event =>{
         event.preventDefault();
+        
         const isValid =this.validate();
         console.log(this.state);
         if(isValid){    
             console.log(this.state);
             //clear form
             this.setState(initialState);
-            const {loggedIn,loginError}=this.state;
-             fetch('http://25.109.92.209:8081/token',{
+            const {loggedIn}=this.state;
+             fetch('http://25.109.92.209:8081/email//email/forgotPassword?receiverEmailAddress=mail',{
                 method: 'POST',
                 body: JSON.stringify({
+                
                 emailAddress: this.state.email,
-                password:this.state.password,
                 }),
                 headers: {
-                "Content-type": "application/json; charset=UTF-8",
-                "Accept-Language":"en"
+                "Content-type": "application/json; charset=UTF-8"
                 }
             })
             .then(response => response.json())
-            .then(json => {
-                localStorage.setItem('jwt',json.token);
-                let jwt="";
-                let loginError="";
-                jwt =json.token;
-                if(jwt){
-                    this.setState({loggedIn:true})
-                    }
-                    if(!loggedIn ){
-                        loginError="Sistemimizde Böyle Bir Kullanıcı bulunamadı lütfen şifrenizi ve mail adresinizi tekrar kontrol ediniz";
-                        this.setState({loginError})
-                        }
-                }
+            .then(json => console.log("json = "+json)
             )}
     }
-    render() {
-        if(this.state.loggedIn){
+    render(){
+        /*if(this.state.loggedIn){
              return   <Redirect to="/LoggedPage"/>
-        }
+        }*/
         return (
            
                 <YpuProvider>
@@ -120,9 +98,9 @@ const initialState ={
                                                 <div className="hamburger-icon"></div>
                                             </button>
                                             <ul className="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
-                                            <li className="nav-item"><a><Link className="nav-link link mbr-editable-menu-item" to = "/"><h6><b>HomePage</b></h6></Link> </a></li>
-                                            <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/searchTrip"><h6><b>Search Trip</b></h6></Link></a></li>
-                                                <li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/register">Register</Link></a></li>
+                                            <li className="nav-item"><a><Link className="nav-link link mbr-editable-menu-item" to = "/"><h6><b>Ana Sayfa</b></h6></Link> </a></li>
+                                            <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/searchTrip"><h6><b>Yolculuk Ara</b></h6></Link></a></li>
+                                                <li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/register">Kayıt Ol</Link></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -134,24 +112,14 @@ const initialState ={
                         <div className="d-flex justify-content-center align-items-center login-container">
                             <form onSubmit={this.handleSubmit} className="login-form text-center">
                                 <img src="assets/images/log.png"/>
-                                <h1 className="mb-5 font-weight-light text-uppercase">Login</h1>
+                                <h4 className=" display-3 "  style={{ color:'rgb(255, 255, 255)'}}> UPDATE PASSWORD</h4>
                                 <div className="form-group">
                                     <input type="text" className="form-control  form-control-lg" name='email' placeholder="E-Mail Adres" onChange={this.handleChange}/>
                                     <div><label className=" form-label er input-group-append">{this.state.emailError}</label></div>
                                 </div>
-                                <div className="form-group">
-                                    <input type="password" className="form-control  form-control-lg"  name='password' placeholder="Password" onChange={this.handleChange}/>
-                                    <div><label className=" form-label er input-group-append">{this.state.passwordError}</label></div>
-                                    <div><label className=" form-label er input-group-append">{this.state.loginError}</label></div>
-                                </div>
-                                <div className="forgot-link form-group d-flex justify-content-between align-items-center">
-                                    <div className="form-check">
-                                    <input type="checkbox" className="form-check-input " id="remember" />
-                                    <label className="form-check-label" for="remember" style={{color: 'rgb(255, 255, 255)'}}>Remember Password</label>
-                                </div>
-                                <a href="#" style={{color:' rgb(229, 255, 0)'}}><Link style={{color:' rgb(229, 255, 0)'}} to = "/forgotPassword"><strong>Forgot Password</strong></Link></a>
-                                </div>
-                                <button type="submit" className="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Login</button>
+                                <p className="mt-3 font-weight-normal"  style={{color: 'rgb(255, 255, 255)'}}>After you send email adress you'll take a validetion code</p>
+                              
+                                <button type="submit" className="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Update Password</button>
                                 <p className="mt-3 font-weight-normal"  style={{color: 'rgb(255, 255, 255)'}}>Don't have an account? <a href="#" ><strong><Link style={{color:' rgb(229, 255, 0)'}} to = "/register">Register</Link></strong></a></p>
                             </form>
                         </div>
@@ -160,4 +128,4 @@ const initialState ={
         )
     }
 }
-export default Login;
+export default ForgotPassword;
