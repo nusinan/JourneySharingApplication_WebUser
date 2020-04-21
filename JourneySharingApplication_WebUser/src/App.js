@@ -9,6 +9,8 @@ import SearchTrip from './components/SearchTrip';
 import PostTrip from './components/PostTrip';
 import LoggedPage from './components/LoggedPage';
 import Logout from './components/Logout';
+import Profile from './components/Profile';
+import Trips from './components/ProfileComponents/Trips';
 import NotFoundPage from './components/NotFoundPage';
 
 import ForgotPassword from './components/ForgotPassword';
@@ -16,9 +18,11 @@ import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 function App() {
   return (
     <Router>
-        <div className="App">
+        <div>
         <Switch>
           <Route exact path  = "/" component ={HomePage}/>
+          <Route exact path  = "/profile" component ={Profile}/>
+          <Route exact path  = "/trips" component ={Trips}/>
           <Route exact path  = "/homepage" component ={HomePage}/>
           <Route exact path = "/login" component ={Login}/>
           <Route exact path = "/register" component ={Register}/>

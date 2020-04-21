@@ -1,0 +1,33 @@
+.frame{
+  border-style: groove; background-color:rgb(212, 16, 107) ;color:white; padding:10px ;font-size: 12pt; font-weight:bold;
+  text-align: center;
+}
+a.frame:hover, a.frame:active {color: white;}
+.cont{
+  margin: 30px 200px 30px 200px;
+  width: 720px;
+  background-color:#FFF;
+}.title{
+color: white;
+font-size: 48pt;
+font-weight:bold;
+text-align: center;
+}
+.ph{
+  margin-bottom:2em ; color:darkgrey;
+}
+.phf{
+  margin-bottom:2em ;margin-left: 2em; color:darkgrey;font-size: 20px ;
+}
+.pi{
+  font-size: 20px;margin-left: 56px;
+}
+.pc{
+  color:slategray;
+}
+.hrc{
+  margin-left: 50px;
+}
+.mtop{
+  margin-top: 40px;
+}

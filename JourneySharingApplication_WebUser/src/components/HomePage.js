@@ -20,7 +20,7 @@ export default class HomePage extends Component {
                                         <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/searchTrip"><h6><b>Search Trip</b></h6></Link></a></li>
                                         <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/PostTrip"><h6><b>Post Trip</b></h6></Link></a></li>
                                        
-                                        <li className="nav-item nav-btn"><a className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" href="ProfilPage.html">Profil Page</a></li>
+                                        <li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/profile">Profile</Link></a></li>
                                         <li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/login">login</Link></a></li><li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/login">Register</Link></a></li>
                                         </ul>
                                         
