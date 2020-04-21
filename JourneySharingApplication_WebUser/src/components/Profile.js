@@ -41,7 +41,7 @@ export default class Profile extends Component {
                                                     <div className="col-md-12" style={{marginBottom:"2em"}}>
                                                         <div className="col-md-3 frame" ><a href="p.html" target="iframe_a">Profile</a></div>
                                                         <div className="col-md-3 frame" ><a  ><Link target="iframe_a" to = "/trips">Trips</Link></a></div>
-                                                        <div className="col-md-3 frame"><a href="comments.html" target="iframe_a">Comments</a></div>
+                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/comments">Comments</Link></a></div>
                                                         <div className="col-md-3 frame" ><a href="ayar.html" target="iframe_a">Settings</a></div>
                                                     </div>
                                                     <div className="col-md-12">
