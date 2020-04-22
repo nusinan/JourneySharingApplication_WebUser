@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import { YpuProvider } from '../../context';
 import {BrowserRouter as Router,Link,Redirect} from "react-router-dom";
-
-
 import profile from '../../assets/images/profill.jpg';
-
 export default class Settings extends Component {
     render() {
         return (
