@@ -42,7 +42,7 @@ export default class Profile extends Component {
                                                         <div className="col-md-3 frame" ><a href="p.html" target="iframe_a">Profile</a></div>
                                                         <div className="col-md-3 frame" ><a  ><Link target="iframe_a" to = "/trips">Trips</Link></a></div>
                                                         <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/comments">Comments</Link></a></div>
-                                                        <div className="col-md-3 frame" ><a href="ayar.html" target="iframe_a">Settings</a></div>
+                                                        <div className="col-md-3 frame" ><a><Link target="iframe_a" to = "/settings">Settings</Link></a></div>
                                                     </div>
                                                     <div className="col-md-12">
                                                     <iframe height="800px" width="100%" src="p.html" name="iframe_a">

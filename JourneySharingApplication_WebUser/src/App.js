@@ -12,6 +12,7 @@ import Logout from './components/Logout';
 import Profile from './components/Profile';
 import Trips from './components/ProfileComponents/Trips';
 import Comments from './components/ProfileComponents/Comments';
+import Settings from './components/ProfileComponents/Settings';
 import NotFoundPage from './components/NotFoundPage';
 
 import ForgotPassword from './components/ForgotPassword';
@@ -23,6 +24,7 @@ function App() {
         <Switch>
           <Route exact path  = "/" component ={HomePage}/>
           <Route exact path  = "/profile" component ={Profile}/>
+          <Route exact path  = "/settings" component ={Settings}/>s
           <Route exact path  = "/trips" component ={Trips}/>
           <Route exact path  = "/comments" component ={Comments}/>
           <Route exact path  = "/homepage" component ={HomePage}/>

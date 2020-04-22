@@ -31,3 +31,19 @@ text-align: center;
 .mtop{
   margin-top: 40px;
 }
+.ptext{
+  font-size: 28px;border:4em;
+}
+.pbutton {
+  background-color: rgb(212, 16, 107); 
+  border: none;
+  color: white;
+  padding: 12px 48px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.ptexte{
+  font-size: 24px;border:4em;
+}
