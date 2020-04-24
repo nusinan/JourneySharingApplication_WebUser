@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Link,Redirect} from "react-router-dom";
 import img1 from '../assets/images/f-mwo-dznni-averie-woodard-2000x2000.jpg';
 import img2 from '../assets/images/mbr-2000x1333.png';
 export default class Profile extends Component {
+    
     render() {
         return (
             <YpuProvider>
@@ -20,7 +21,7 @@ export default class Profile extends Component {
                                         <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/"><h6><b>HomePage</b></h6></Link></a></li>
                                         <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/searchTrip"><h6><b>Search Trip</b></h6></Link></a></li>
                                         <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/PostTrip"><h6><b>Post Trip</b></h6></Link></a></li>
-                                        <li className="nav-item nav-btn"><a ><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/logout">logout</Link></a></li>
+                                        <li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/logout">logout</Link></a></li>
                                         </ul>
                                     </div>
                                 </div>
