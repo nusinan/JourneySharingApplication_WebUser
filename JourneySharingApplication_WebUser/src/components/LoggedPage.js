@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import {YpuProvider} from '../context';
 import img1 from '../assets/images/f-mwo-dznni-averie-woodard-2000x2000.jpg';
 import img2 from '../assets/images/mbr-2000x1333.png';
+import Profil from './ProfileComponents/Profil';
 import {BrowserRouter as Router,Link,Redirect} from "react-router-dom";
+
 export default class HomePage extends Component {
     constructor(props){
         super(props)
         const token = localStorage.getItem('jwt');
-      
+        
         let loggedIn =true;
         if(token==null){
       
@@ -15,6 +17,8 @@ export default class HomePage extends Component {
         }
         this.state={loggedIn}
       }
+   
+
     render() {
         if(this.state.loggedIn===false){
             return <Redirect to="/Login"/>
@@ -23,6 +27,7 @@ export default class HomePage extends Component {
             <YpuProvider>
                 <div id="menu-0" custom-code="true">
                     <section>
+                    
                         <nav className="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
                             <div className="container">
                                 <div className="mbr-table">
@@ -33,7 +38,7 @@ export default class HomePage extends Component {
                                         <li className="nav-item"><a className="nav-link link mbr-editable-menu-item" href="yolculukara.html"><h6><b>Yolculuk Ara</b></h6> </a></li>
                                         <li className="nav-item"><a className="nav-link link mbr-editable-menu-item" href="ilanver.html"><h6><b>Yolculuk ilanı ver</b></h6></a></li>
                                        
-                                        <li className="nav-item nav-btn"><a className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" href="ProfilPage.html">Profil Page</a></li>
+                                        <li className="nav-item nav-btn"><a ><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/profile">Profile</Link></a></li>
                                         <li className="nav-item nav-btn"><a ><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/logout">logout</Link></a></li>
                                         </ul>
                                         
