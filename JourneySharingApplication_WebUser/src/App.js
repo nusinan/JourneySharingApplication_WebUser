@@ -9,13 +9,11 @@ import SearchTrip from './components/SearchTrip';
 import PostTrip from './components/PostTrip';
 import LoggedPage from './components/LoggedPage';
 import Logout from './components/Logout';
+import Trips from './components/Trips';
 import Profile from './components/Profile';
-import Trips from './components/ProfileComponents/Trips';
-import Comments from './components/ProfileComponents/Comments';
-import Settings from './components/ProfileComponents/Settings';
-import Profil from './components/ProfileComponents/Profil';
+import Settings from './components/Settings';
+import Comments from './components/Comments';
 import NotFoundPage from './components/NotFoundPage';
-
 import ForgotPassword from './components/ForgotPassword';
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 function App() {
@@ -24,11 +22,10 @@ function App() {
         <div>
         <Switch>
           <Route exact path  = "/" component ={HomePage}/>
-          <Route exact path  = "/profile" component ={Profile}/>
-          <Route exact path  = "/profil" component ={Profil}/>
-          <Route exact path  = "/settings" component ={Settings}/>s
           <Route exact path  = "/trips" component ={Trips}/>
           <Route exact path  = "/comments" component ={Comments}/>
+          <Route exact path  = "/profile" component ={Profile}/>
+          <Route exact path  = "/settings" component ={Settings}/>
           <Route exact path  = "/homepage" component ={HomePage}/>
           <Route exact path = "/login" component ={Login}/>
           <Route exact path = "/register" component ={Register}/>
@@ -40,8 +37,6 @@ function App() {
           <Route exact path  = "/loggedPage" component ={LoggedPage}/>
           <Route  component ={NotFoundPage}/>
         </Switch>
-        
-        
         </div>
     </Router>
   );

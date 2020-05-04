@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {YpuProvider} from '../context';
 import img1 from '../assets/images/f-mwo-dznni-averie-woodard-2000x2000.jpg';
 import img2 from '../assets/images/mbr-2000x1333.png';
+import {BrowserRouter as Router,Link,Redirect} from "react-router-dom";
 export default class SearchTrip extends Component {
     render() {
         return (
@@ -13,13 +14,12 @@ export default class SearchTrip extends Component {
                                 <div className="mbr-table">
                                    
                                     <div className="mbr-table-cell">
-                                        <ul className="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
-                                        <li className="nav-item"><a className="nav-link link mbr-editable-menu-item" href="index.html"><h6><b>Anasayfa</b></h6> </a></li>
-                                        <li className="nav-item"><a className="nav-link link mbr-editable-menu-item" href="yolculukara.html"><h6><b>Yolculuk Ara</b></h6> </a></li>
-                                        <li className="nav-item"><a className="nav-link link mbr-editable-menu-item" href="ilanver.html"><h6><b>Yolculuk ilanı ver</b></h6></a></li>
-                                        <li className="nav-item dropdown open"><a className="nav-link link dropdown-toggle mbr-editable-menu-item" href="index.html" data-toggle="dropdown-submenu" aria-expanded="true">Daha Fazlası</a><div><a className="dropdown-menu"><a className="dropdown-item mbr-editable-menu-item" href="#">Hakkımızda</a><a className="dropdown-item mbr-editable-menu-item" href="#">Kullanım Bilgilendirme</a><a className="dropdown-item mbr-editable-menu-item" href="#">Ücret Politikası</a><a className="dropdown-item mbr-editable-menu-item" href=".#">İletişim ve Şikayet</a><a class="dropdown-item mbr-editable-menu-item" href=".#">Kullanım Şartları</a></a> </div></li>
-                                        <li className="nav-item nav-btn"><a className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" href="ProfilPage.html">Profil Page</a></li>
-                                        <li className="nav-item nav-btn"><a className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" href="login.html">Giriş Yap</a></li><li className="nav-item nav-btn"><a className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" href="Register.html">Kayıt Ol</a></li>
+                                    <ul className="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                                        <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/"><h6><b>HomePage</b></h6></Link></a></li>
+                                        <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/searchTrip"><h6><b>SearchTrip</b></h6></Link></a></li>
+                                        <li className="nav-item"><a ><Link className="nav-link link mbr-editable-menu-item" to = "/PostTrip"><h6><b>PostTrip</b></h6></Link></a></li>
+                                        <li className="nav-item nav-btn"><a><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/profile">Profile</Link></a></li>
+                                        <li className="nav-item nav-btn"><a ><Link className="nav-link btn btn-white btn-white-outline mbr-editable-menu-item" to = "/logout">logout</Link></a></li>
                                         </ul>
                                         
                                     </div>

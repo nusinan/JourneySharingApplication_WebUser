@@ -3,8 +3,38 @@ import { YpuProvider } from '../context';
 import {BrowserRouter as Router,Link,Redirect} from "react-router-dom";
 import img1 from '../assets/images/f-mwo-dznni-averie-woodard-2000x2000.jpg';
 import img2 from '../assets/images/mbr-2000x1333.png';
+import profile from '../assets/images/profill.jpg';
 export default class Profile extends Component {
-    
+    constructor(props) {
+        super(props);
+       this.state={
+           name:"Numan",
+           surname:"Sinan",
+           emailAddress:"example@example.com",
+           birthday:"08.09.1997",
+           phone:5530892463,
+       }
+      }
+      componentDidMount() {
+        fetch('http://25.109.92.209:8081/user/me',{
+            method: 'GET',
+            headers: {
+            "Content-type": "application/json; charset=UTF-8",
+            "Accept-Language":"en",
+           "Authorization":"Bearer "+localStorage.getItem('jwt')
+            }
+        })
+        .then(response => response.json())
+        .then(json => {
+            console.log(json);
+            this.setState({name:json.name,
+                           surname:json.surname,
+                           emailAddress:json.emailAddress,
+                           birthday:json.birthday,
+                           phone:json.phoneNumber,
+                })
+        })
+      }
     render() {
         return (
             <YpuProvider>
@@ -28,22 +58,87 @@ export default class Profile extends Component {
                             </div>
                         </nav>
                     </section>
-                        <section className="mbr-section  mbr-section-full header2 mbr-parallax-background" id="header2-1" style={{ backgroundImage:`url(${img1})` }}>
+                        <section className="mbr-section  mbr-section-full header2 mbr-parallax-background" id="header2-1" style={{ backgroundImage:`url(${img1})`}}>
                             <div className="cont">
                             <div className="col-md-12 ">
                             <div style={{marginTop:"4em"}}></div>
-                            <p className="title " style={{width: "96rem"}}><b>Numan Sinan</b></p>
+                            <p className="title " style={{width: "96rem"}}><b>{this.state.name} {this.state.surname}</b></p>
                                     <div className="card" style={{width: "96rem"}}>
                                             <div className="row">
                                                     <div className="col-md-12" style={{marginBottom:"2em"}}>
-                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/profil">Profile</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/trips">Trips</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/comments">Comments</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/settings">Settings</Link></a></div>
+                                                    <div className="col-md-3 frame"><a><Link  to = "/profile">Profile</Link></a></div>
+                                                        <div className="col-md-3 frame"><a><Link  to = "/trips">Trips</Link></a></div>
+                                                        <div className="col-md-3 frame"><a><Link  to = "/comments">Comments</Link></a></div>
+                                                        <div className="col-md-3 frame"><a><Link  to = "/settings">Settings</Link></a></div>
                                                     </div>
                                                     <div className="col-md-12">
-                                                    <iframe height="800px" width="100%" src="/profil" name="iframe_a">
-                                                    </iframe>
+                                                    <section>
+                                                            <div className="col-md-12 ph"></div>
+                                                            <div className="col-md-12 phf" ><b>Profile</b></div>
+                                                                <div className="col-md-3" >
+                                                                    <div style={{width: "20rem"}}>
+                                                                        <img src={profile} style={{marginLeft: "36px", marginTop: "20px",width:"320px",}} className="card-img-top" alt="..."/>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                        <div className="col-md-12 ph"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-9" >
+                                                                <div>
+                                                                    <div class="col-md-4" >
+                                                                    <hr/> 
+                                                                    <h5><b>Name : </b><label className="pc"><b>{this.state.name}</b></label></h5>
+                                                                    <hr/>
+                                                                    <h5><b>E-Mail : </b><label className="pc"><b>{this.state.emailAddress}</b></label></h5>
+                                                                    <hr/>
+                                                                    </div>
+                                                                    <div class="col-md-4" >
+                                                                    <hr/>
+                                                                    <h5><b>Surname : </b><label className="pc"><b>{this.state.surname}</b></label></h5>
+                                                                    <hr/>
+                                                                    <h5><b>Phone : </b><label className="pc"><b>{this.state.phone}</b></label></h5>    
+                                                                    <hr/> 
+                                                                    </div>
+                                                                    <div class="col-md-4" >
+                                                                    <hr/>
+                                                                    <h5><b>Birthday : </b><label className="pc"><b>{this.state.birthday}</b></label></h5>  
+                                                                    <hr/>
+                                                                    <h5><b>Birthday : </b><label className="pc"><b>{this.state.birthday}</b></label></h5>  
+                                                                    <hr/>   
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div  style={{marginTop: "142px"}}>
+                                                                        <div >
+                                                                        <p class="card-text pc" style={{padding:"20px"}}>
+                                                                        <h5 style={{color:"black"}}><b>Addition : </b></h5>
+                                                                            <p style={{padding:"24px"}}>
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            </p>
+                                                                            
+                                                                        </p>
+                                                                        </div>    
+                                                                    </div>
+                                                                </div>    
+                                                                </div>
+                                                        </section>
                                                     </div>
                                             </div>
                                     </div>
