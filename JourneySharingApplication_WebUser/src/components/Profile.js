@@ -34,6 +34,8 @@ export default class Profile extends Component {
                            phone:json.phoneNumber,
                 })
         })
+
+        
       }
     render() {
         return (
@@ -64,13 +66,13 @@ export default class Profile extends Component {
                             <div style={{marginTop:"4em"}}></div>
                             <p className="title " style={{width: "96rem"}}><b>{this.state.name} {this.state.surname}</b></p>
                                     <div className="card" style={{width: "96rem"}}>
-                                            <div className="row">
-                                                    <div className="col-md-12" style={{marginBottom:"2em"}}>
-                                                    <div className="col-md-3 frame"><a><Link  to = "/profile">Profile</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link  to = "/trips">Trips</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link  to = "/comments">Comments</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link  to = "/settings">Settings</Link></a></div>
-                                                    </div>
+                                        <div className="row">
+                                            <div className="col-md-12" style={{marginBottom:"2em"}}>
+                                            <div className="col-md-3 frame"><a><Link  to = "/profile">Profile</Link></a></div>
+                                            <div className="col-md-3 frame"><a><Link  to = "/trips">Trips</Link></a></div>
+                                            <div className="col-md-3 frame"><a><Link  to = "/comments">Comments</Link></a></div>
+                                            <div className="col-md-3 frame"><a><Link  to = "/settings">Settings</Link></a></div>
+                                        </div>
                                                     <div className="col-md-12">
                                                     <section>
                                                             <div className="col-md-12 ph"></div>
@@ -110,7 +112,7 @@ export default class Profile extends Component {
                                                                     <hr/>
                                                                     <h5><b>Birthday : </b><label className="pc"><b>{this.state.birthday}</b></label></h5>  
                                                                     <hr/>
-                                                                    <h5><b>Birthday : </b><label className="pc"><b>{this.state.birthday}</b></label></h5>  
+                                                                    <h5><b>example : </b><label className="pc"><b>example</b></label></h5>  
                                                                     <hr/>   
                                                                     </div>
                                                                 </div>
@@ -132,8 +134,10 @@ export default class Profile extends Component {
                                                                             With supporting text below as a natural lead-in to additional content.
                                                                             With supporting text below as a natural lead-in to additional content.
                                                                             </p>
-                                                                            
                                                                         </p>
+                                                                            <h5><b>Şoförlük için Hesap Onay Durumu </b><label className="pk"><b>:  Onaylanmamış</b></label></h5>
+                                                                            <label className="pc"><b> Hesabı Onaylamak için <a href="#" ><strong><Link style={{color:'red'}} to = "/register">buraya tıklayınız</Link></strong></a></b></label>  
+                                                                            
                                                                         </div>    
                                                                     </div>
                                                                 </div>    

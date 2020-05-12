@@ -217,11 +217,12 @@ export default class Settings extends Component {
                                 <div className="card" style={{width: "96rem"}}>
                                         <div className="row">
                                                 <div className="col-md-12" style={{marginBottom:"2em"}}>
-                                                <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/profile">Profile</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/trips">Trips</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/comments">Comments</Link></a></div>
-                                                        <div className="col-md-3 frame"><a><Link target="iframe_a" to = "/settings">Settings</Link></a></div>
+                                                <div className="col-md-3 frame"><a><Link  to = "/profile">Profile</Link></a></div>
+                                                        <div className="col-md-3 frame"><a><Link  to = "/trips">Trips</Link></a></div>
+                                                        <div className="col-md-3 frame"><a><Link  to = "/comments">Comments</Link></a></div>
+                                                        <div className="col-md-3 frame"><a><Link  to = "/settings">Settings</Link></a></div>
                                                 </div>
+                                                
                                                 <div className="col-md-12">
                                                 <div className="col-md-12 ph navbar navbar-dropdown bg-color transparent " >
                                                         <div ><label className=" usucces  tp ">{this.state.update}</label></div>

@@ -16,7 +16,41 @@ export default class HomePage extends Component {
         }
         this.state={loggedIn}
       }
-   
+      componentDidMount() {
+        var _CONTENT = [ "Nereye Gitmek İstersiniz ?", "İstanbul Ankara İzmir Antalya .....", "Türkiyenin 4 bir tarafına", "Şoförünü Seç Yolculuğa Başla" ];
+        var _PART = 0;
+        var _PART_INDEX = 0;
+        var _INTERVAL_VAL;
+        var _ELEMENT = document.querySelector("#text");
+        function Type() { 
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+            if(text === _CONTENT[_PART]) {
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function() {
+                    _INTERVAL_VAL = setInterval(Delete, 50);
+                }, 1000);
+            }
+        }
+        function Delete() {
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+            if(text === '') {
+                clearInterval(_INTERVAL_VAL);
+                if(_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+                _PART_INDEX = 0;
+                setTimeout(function() {
+                    _INTERVAL_VAL = setInterval(Type, 100);
+                }, 200);
+            }
+        }
+        _INTERVAL_VAL = setInterval(Type, 100);
+      }  
 
     render() {
         if(this.state.loggedIn===false){
@@ -71,9 +105,8 @@ export default class HomePage extends Component {
 
                             <div className="container">
                             <div className="mbr-section row">
-                                    <h4 className=" display-3 "  style={{ color:'rgb(71, 85, 119)'}}> NEREYE GİTMEK İSTİYORSUNUZ </h4>
-                                    
-                                    <h4 className="mbr-section-title display-3"> YOLCULUK ARA </h4>
+                                    <div className="col-md-12"><h4 className=" display-3 " id="text" style={{ color:'rgb(71, 85, 119)'}}> </h4></div>
+                                    <div className="col-md-12"><h4 className="mbr-section-title display-3"> YOLCULUK ARA </h4></div>
                                     <div className="col-md-12 order-md-1">
                                         <h4 className="mb-3 mbr-section-text input-group-append" >Bulunduğunuz Konumunuzu Seçiniz</h4>
                                         <label for="address2"><span className="text-muted"></span></label>
