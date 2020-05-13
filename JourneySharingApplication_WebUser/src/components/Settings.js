@@ -13,6 +13,13 @@ const initialState ={
         phoneNumberError:"",
 }
 export default class Settings extends Component {
+        fileSelectedHandler=event=>{
+                console.log(event);
+        }
+        onChange =(e)=>{
+                let files = e.target.files;
+                console.log(e);
+             }
         constructor(props){
                 super(props)
         }
@@ -107,7 +114,7 @@ export default class Settings extends Component {
                 }
                 else{
                         this.setState(initialState);
-                        this.succes("Profile Photo");      
+                        this.succes("Profile Photo");   
                 }
         }
         nameSubmit = event =>{
@@ -186,6 +193,7 @@ export default class Settings extends Component {
                         this.profileUpdate();     
                 }
         }
+        
         render(){
                 return (
                 <YpuProvider>

@@ -13,6 +13,7 @@ import Trips from './components/Trips';
 import Profile from './components/Profile';
 import Settings from './components/Settings';
 import Comments from './components/Comments';
+import Confirmation from './components/Confirmation';
 import NotFoundPage from './components/NotFoundPage';
 import ForgotPassword from './components/ForgotPassword';
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
@@ -26,6 +27,7 @@ function App() {
           <Route exact path  = "/comments" component ={Comments}/>
           <Route exact path  = "/profile" component ={Profile}/>
           <Route exact path  = "/settings" component ={Settings}/>
+          <Route exact path  = "/confirmation" component ={Confirmation}/>
           <Route exact path  = "/homepage" component ={HomePage}/>
           <Route exact path = "/login" component ={Login}/>
           <Route exact path = "/register" component ={Register}/>

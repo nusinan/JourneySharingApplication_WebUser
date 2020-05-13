@@ -5,6 +5,7 @@ import img1 from '../assets/images/f-mwo-dznni-averie-woodard-2000x2000.jpg';
 import img2 from '../assets/images/mbr-2000x1333.png';
 import profile from '../assets/images/profill.jpg';
 export default class Profile extends Component {
+ 
     constructor(props) {
         super(props);
        this.state={
@@ -34,7 +35,6 @@ export default class Profile extends Component {
                            phone:json.phoneNumber,
                 })
         })
-
         
       }
     render() {
@@ -112,7 +112,7 @@ export default class Profile extends Component {
                                                                     <hr/>
                                                                     <h5><b>Birthday : </b><label className="pc"><b>{this.state.birthday}</b></label></h5>  
                                                                     <hr/>
-                                                                    <h5><b>example : </b><label className="pc"><b>example</b></label></h5>  
+                                                                    <h5><b>Status : </b><label className="pc"><b>belirtilmedi</b></label></h5>  
                                                                     <hr/>   
                                                                     </div>
                                                                 </div>
@@ -136,7 +136,7 @@ export default class Profile extends Component {
                                                                             </p>
                                                                         </p>
                                                                             <h5><b>Şoförlük için Hesap Onay Durumu </b><label className="pk"><b>:  Onaylanmamış</b></label></h5>
-                                                                            <label className="pc"><b> Hesabı Onaylamak için <a href="#" ><strong><Link style={{color:'red'}} to = "/register">buraya tıklayınız</Link></strong></a></b></label>  
+                                                                            <label className="pc"><b> Hesabı Onaylamak için <a href="#" ><strong><Link style={{color:'red'}} to = "/confirmation">buraya tıklayınız</Link></strong></a></b></label>  
                                                                             
                                                                         </div>    
                                                                     </div>
