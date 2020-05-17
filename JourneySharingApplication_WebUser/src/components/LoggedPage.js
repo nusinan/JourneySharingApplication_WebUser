@@ -169,10 +169,10 @@ export default class HomePage extends Component {
                                 <div className="col-xs-12 col-lg-4">
 
                                     <div className="mbr-testimonial card mbr-testimonial-lg">
-                                        <div className="card-block"><p>“its really very amazing app that makes me finish html page in 3 minutes ( that's usually takes more than 1 hours at least from me if i did it from scratch). i hope to have very big library and plugins for this APP thanks again for your nice application”</p></div>
+                                        <div className="card-block"><p>So far so good ! I had used YPU only 2 times, and both rides were super!  I hate taking the bus so i dont mind paying the same amount for a nice cozy car seat :) At this moment im waiting for my 3rd ride and i hope all goes well as previous times.. From what i read seems that it depends a lot on where your driver is from.. Also, when you write bad reviews keep in mind that you were maybe not the best customer ever sooo..</p></div>
                                         <div className="mbr-author card-footer">
                                             <div className="mbr-author-img"><img src="assets/images/ellejmi6dqy-abigail-sisson-160x160.jpg" className="img-circle"/></div>
-                                            <div className="mbr-author-name">Abanoub S.</div>
+                                            <div className="mbr-author-name">Numan Sinan</div>
                                             
                                         </div>
                                     </div>
@@ -182,20 +182,23 @@ export default class HomePage extends Component {
                                 <div className="col-xs-12 col-lg-4">
 
                                     <div className="mbr-testimonial card mbr-testimonial-lg">
-                                        <div className="card-block"><p>“First of all hands off to you guys for your effort and nice, super tool. Good work mobirise team. We are expecting the new version soon with advance functionality with full bootstrap design. Great effort and super UI experience with easy drag &amp; drop with no time design bootstrap builder in present web design world.”</p></div>
+                                        <div className="card-block"><p>First time I had used blablacar. Needed to get from Ankara to İstanbul   . Agreed to meet at bus station. Driver informed me that he was going to be 10 mins late and where I should wait.
+                                        Daria drove sensibly but not slowly. I was front passenger and at no time did I feel nervous. He is a very smooth driver giving a comfortable ride. He couldn't take me all the way to Vilamoura but made sure he stopped near a taxi rank to finish my journey.
+                                        Well done Daria.</p></div>
                                         <div className="mbr-author card-footer">
                                             <div className="mbr-author-img"><img src="assets/images/fcuj-bvjrrs-alicja-koczaska-160x160.jpg" className="img-circle"/></div>
-                                            <div className="mbr-author-name">Suffian A.</div>
+                                            <div className="mbr-author-name">Ozan Duran</div>
                                             
                                         </div>
                                     </div>
                                 </div><div className="col-xs-12 col-lg-4">
 
                                     <div className="mbr-testimonial card mbr-testimonial-lg">
-                                        <div className="card-block"><p>“At first view, looks like a nice innovative tool, i like the great focus and time that was given to the responsive design, i also like the simple and clear drag and drop features. Give me more control over the object's properties and ill be using this tool for more serious projects. Regards.”</p></div>
+                                        <div className="card-block"><p>It goes from point A to point B, but they're so obsessed with making sure that they get their money that the customer experience sucks. I used it 4 years ago and it was great., and it's impossible to reach out to the other person about alternative drop offs until you've locked in. Once you've locked in the drive doesn't have to do anything accommodating.
+                                        YPU, you had something great, and you killed it. Congrats.</p></div>
                                         <div className="mbr-author card-footer">
-                                            <div className="mbr-author-img"><img src="assets/images/fqkbxo2nkq0-sticker-mule-160x160.jpg" className="img-circle"/></div>
-                                            <div className="mbr-author-name">Jhollman C.</div>
+                                            <div className="mbr-author-img"><img src="assets/images/fqkbxo2nkq0-sticker-mule-160x160.png" className="img-circle"/></div>
+                                            <div className="mbr-author-name">Anna Watson</div>
                                             
                                         </div>
                                     </div>
@@ -228,9 +231,9 @@ export default class HomePage extends Component {
                                     
                                     <div className="mbr-plan-header card-block">
                                     
-                                    <div className="card-img"><img src="assets/images/p1.png" className="card-img-top"/></div>
+                                    <div className="card-img"><img src="assets/images/fqkbxo2nkq0-sticker-mule-160x160.png" className="card-img-top"/></div>
                                     
-                                    <div className="mbr-plan-list"><ul className="list-group list-group-flush"><li className="list-group-item">Daria Volkova</li><li className="list-group-item"><label>Başlangış: </label>Kiev</li><li className="list-group-item"><label>Hedef: </label>Odessa</li><li className="list-group-item"><label>Hareket Saati: </label>15:30 da</li></ul></div>
+                                    <div className="mbr-plan-list"><ul className="list-group list-group-flush"><li className="list-group-item">Daria Watson</li><li className="list-group-item"><label></label>İzmir</li><li className="list-group-item"><label></label>Antalya</li><li className="list-group-item"><label> </label>15:30 da</li></ul></div>
                                     <div className="mbr-plan-btn"><a href="#" className="btn btn-black btn-black-outline">Göz at</a></div>
                                     </div>
                                 </div>
@@ -239,9 +242,9 @@ export default class HomePage extends Component {
                                 <div className="mbr-plan card text-xs-center">
                                         <div className="mbr-plan-header card-block">
                                     
-                                                <div className="card-img"><img src="assets/images/p1.png" className="card-img-top"/></div>
+                                                <div className="card-img"><img src="assets/images/fcuj-bvjrrs-alicja-koczaska-160x160.jpg" className="card-img-top"/></div>
                                             
-                                                <div className="mbr-plan-list"><ul className="list-group list-group-flush"><li className="list-group-item">Daria Volkova</li><li className="list-group-item">Kiev</li><li className="list-group-item">Odessa</li><li className="list-group-item">15:30 da</li></ul></div>
+                                                <div className="mbr-plan-list"><ul className="list-group list-group-flush"><li className="list-group-item">Ozan Duran</li><li className="list-group-item">İstanbul</li><li className="list-group-item">Ankara</li><li className="list-group-item">21:10 da</li></ul></div>
                                                 <div className="mbr-plan-btn"><a href="#" className="btn btn-black btn-black-outline">Göz at</a></div>
                                             </div>
                                     
@@ -252,9 +255,9 @@ export default class HomePage extends Component {
                                 <div className="mbr-plan card text-xs-center">
                                         <div className="mbr-plan-header card-block">
                                     
-                                                <div className="card-img"><img src="assets/images/p1.png" className="card-img-top"/></div>
+                                                <div className="card-img"><img src="assets/images/hasan.png" className="card-img-top"/></div>
                                             
-                                                <div className="mbr-plan-list"><ul className="list-group list-group-flush"><li className="list-group-item">Daria Volkova</li><li className="list-group-item">Kiev</li><li className="list-group-item">Odessa</li><li className="list-group-item">15:30 da</li></ul></div>
+                                                <div className="mbr-plan-list"><ul className="list-group list-group-flush"><li className="list-group-item">Hasan Hüseyin Güneş</li><li className="list-group-item">İstanbul</li><li className="list-group-item">Tunceli</li><li className="list-group-item">8:40 da</li></ul></div>
                                                 <div className="mbr-plan-btn"><a href="#" className="btn btn-black btn-black-outline">Göz at</a></div>
                                             </div>
                                 </div>
@@ -268,11 +271,11 @@ export default class HomePage extends Component {
                         <div className="mbr-cards-col col-xs-12 col-lg-4" style={{paddingtop: 80, paddingbottom: 80}}>
                             <div className="container">
                                 <div className="card cart-block">
-                                    <div className="card-img iconbox"><a href="https://mobirise.com" className="mbri-hearth mbr-iconfont mbr-iconfont-features4" style={{color: 'rgb(233, 165, 211)'}}></a></div>
+                                <div className="mbr-figure"><img  style={{width: '100px',height:'100px',marginLeft:'250px'}} src="assets/images/dolar.png"/></div>
                                     <div className="card-block">
-                                        <h4 className="card-title">Made with love</h4>
-                                        <h5 className="card-subtitle">Bootstrap 4 has been noted</h5>
-                                        <p className="card-text">Bootstrap 4 has been noted as one of the most reliable and proven frameworks and Mobirise has been equipped to develop websites using this framework.</p>
+                                        <h4 className="card-title">Earn Money and Cheap Trips</h4>
+                                        <h5 className="card-subtitle">Save Money</h5>
+                                        <p className="card-text">To travel by choosing the trips suitable for your budget through the application</p>
                                     </div>
                                 </div>
                             </div>
@@ -280,11 +283,11 @@ export default class HomePage extends Component {
                         <div className="mbr-cards-col col-xs-12 col-lg-4" style={{paddingtop: 80, paddingbottom: 80}}>
                             <div className="container">
                                 <div className="card cart-block">
-                                    <div className="card-img iconbox"><a href="https://mobirise.com" className="mbri-globe-2 mbr-iconfont mbr-iconfont-features4" style={{color: 'rgb(39, 170, 224)'}}></a></div>
+                                <div className="mbr-figure"><img  style={{width: '100px',height:'100px',marginLeft:'250px'}} src="assets/images/people.png"/></div>
                                     <div className="card-block">
                                         <h4 className="card-title">Meet people everywhere</h4>
-                                        <h5 className="card-subtitle">One of Bootstrap 4's big points</h5>
-                                        <p className="card-text">One of Bootstrap 4's big points is responsiveness and Mobirise makes effective use of this by generating highly responsive website for you.</p>
+                                        <h5 className="card-subtitle">Make new friendships</h5>
+                                        <p className="card-text">You can make new friendships with the people you meet during the journey.</p>
                                     </div>
                                 </div>
                         </div>
@@ -292,11 +295,11 @@ export default class HomePage extends Component {
                         <div className="mbr-cards-col col-xs-12 col-lg-4" style={{paddingtop: 80, paddingbottom: 80}}>
                             <div className="container">
                                 <div className="card cart-block">
-                                    <div className="card-img iconbox"><a href="https://mobirise.com" className="mbri-smile-face mbr-iconfont mbr-iconfont-features4" style={{color: 'rgb(193, 193, 193)'}}></a></div>
+                                <div className="mbr-figure"><img  style={{width: '100px',height:'100px',marginLeft:'250px'}} src="assets/images/happy.png"/></div>
                                     <div className="card-block">
-                                        <h4 className="card-title">Web Fonts</h4>
-                                        <h5 className="card-subtitle">Google has a highly exhaustive list of fonts</h5>
-                                        <p className="card-text">Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise makes it easy for you to use them on your website easily and freely.</p>
+                                        <h4 className="card-title">Happy Traveling</h4>
+                                        <h5 className="card-subtitle">Pleasure Peaople</h5>
+                                        <p className="card-text">You can happily complete your journeys at any time and plan</p>
                                     </div>
                                 </div>
                             </div>
@@ -311,72 +314,6 @@ export default class HomePage extends Component {
                                 <h3 className="mbr-section-title display-2">UYGULAMAYA GENEL BAKIŞ</h3>
                             </div>
                         </div>
-                    </div>
-                    </section>
-
-                    <section className="mbr-section article mbr-section__container" id="content1-j" style={{backgroundcolor: 'rgb(244, 244, 244)', paddingtop: 20, paddingbottom: 20}}>
-
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xs-12 lead">This app is so cool and great and helps to solve so many problems. Ut elementum hendrerit semper. In consectetur mauris ut mi vulputate, eget finibus dui dapibus. Donec porttitor interdum gravida. Vestibulum sagittis, ex vitae sollicitudin mattis, elit neque mattis augue, eget fringilla libero sem eget ante. Nulla non maximus quam.&nbsp;</div>
-                        </div>
-                        
-                        
-                    </div>
-
-                    </section>
-
-                    <section className="mbr-cards mbr-section mbr-section-nopadding" id="features1-e" style={{backgroundcolor:'rgb(244, 244, 244)'}}>
-                    <div className="mbr-cards-row row striped" id="uygulama2">
-                        <div className="mbr-cards-col col-xs-12 col-lg-3" style={{paddingtop: 60, paddingbottom: 60}}>
-                            <div className="container">
-                                <div className="card cart-block">
-                                    <div className="card-img"><img src="assets/images/interface-screenshot0-1.jpg" className="card-img-top"/></div>
-                                    <div className="card-block">
-                                        <h4 className="card-title">Cool notifications</h4>
-                                        <h5 className="card-subtitle">Boostrap</h5>
-                                        <p className="card-text">Bootstrap 4 has been noted as one of the most reliable and proven frameworks and Mobirise has been equipped to develop websites using this framework.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mbr-cards-col col-xs-12 col-lg-3" style={{paddingtop: 60, paddingbottom: 60}}>
-                            <div className="container">
-                                <div className="card cart-block">
-                                    <div className="card-img"><img src="assets/images/interface-screenshot2.jpg" className="card-img-top"/></div>
-                                    <div className="card-block">
-                                        <h4 className="card-title">Responsive</h4>
-                                        <h5 className="card-subtitle">One of Bootstrap 4's big points</h5>
-                                        <p className="card-text">One of Bootstrap 4's big points is responsiveness and Mobirise makes effective use of this by generating highly responsive website for you.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mbr-cards-col col-xs-12 col-lg-3" style={{paddingtop: 60, paddingbottom: 60}}>
-                            <div className="container">
-                                <div className="card cart-block">
-                                    <div className="card-img"><img src="assets/images/interface-screenshot1.jpg" className="card-img-top"/></div>
-                                    <div className="card-block">
-                                        <h4 className="card-title">Web Fonts</h4>
-                                        <h5 className="card-subtitle">Google has a highly exhaustive list of fonts</h5>
-                                        <p className="card-text">Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise makes it easy for you to use them on your website easily and freely.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mbr-cards-col col-xs-12 col-lg-3" style={{paddingtop: 60, paddingbottom: 60}}>
-                            <div className="container">
-                                <div className="card cart-block">
-                                    <div className="card-img"><img src="assets/images/interface-screenshot3.jpg" className="card-img-top"/></div>
-                                    <div className="card-block">
-                                        <h4 className="card-title">Unlimited Sites</h4>
-                                        <h5 className="card-subtitle">Mobirise gives you the freedom to develop</h5>
-                                        <p className="card-text">Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mbr-arrow mbr-arrow-floating hidden-sm-down" aria-hidden="true"><a href="#pricing-table2-f-1"><i className="mbr-arrow-icon"></i></a></div>
                     </div>
                     </section>
                     <section className="mbr-section" id="pricing-table2-f-1" style={{backgroundcolor: 'rgb(255, 255, 255)', paddingtop: 120, paddingbottom: 120}}>

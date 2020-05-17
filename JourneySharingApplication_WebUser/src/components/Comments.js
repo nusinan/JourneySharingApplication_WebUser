@@ -79,12 +79,12 @@ export default class Comments extends Component{
                                                                 <div className="col-md-8">
                                                                 <div className="kart">
                                                                     <div className="col-md-3">
-                                                                            <img src="assets/images/profill.jpg" className="card-img-top" style={{marginTop: "30px"}}/>
+                                                                            <img src="assets/images/fcuj-bvjrrs-alicja-koczaska-160x160.jpg" className="card-img-top" style={{marginTop: "30px"}}/>
                                                                     </div>
                                                                     <div className="col-md-9">
                                                                         <div className="card w-90">
                                                                             <div className="card-body">
-                                                                                <h5 className="card-title pc">Commented by Numan Sinan </h5>
+                                                                                <h5 className="card-title pc">Commented by Ozan Duran </h5>
                                                                                 <p className="card-text"> With supporting text below as a natural lead-in to additional content.
                                                                                         With supporting text below as a natural lead-in to additional content.
                                                                                         With supporting text below as a natural lead-in to additional content.
@@ -99,12 +99,12 @@ export default class Comments extends Component{
                                                                 </div>
                                                                 <div className="kart">
                                                                     <div className="col-md-3">
-                                                                            <img src="assets/images/profill.jpg" className="card-img-top" style={{marginTop: "30px"}}/>
+                                                                            <img src="assets/images/fqkbxo2nkq0-sticker-mule-160x160.png" className="card-img-top" style={{marginTop: "30px"}}/>
                                                                     </div>
                                                                     <div className="col-md-9">
                                                                         <div className="card w-90">
                                                                             <div className="card-body">
-                                                                                <h5 className="card-title pc">Commented by Numan Sinan </h5>
+                                                                                <h5 className="card-title pc">Commented by Anna Watson </h5>
                                                                                 <p className="card-text"> With supporting text below as a natural lead-in to additional content.
                                                                                         With supporting text below as a natural lead-in to additional content.
                                                                                         With supporting text below as a natural lead-in to additional content.
@@ -119,12 +119,12 @@ export default class Comments extends Component{
                                                                 </div> 
                                                                 <div className="kart">
                                                                     <div className="col-md-3">
-                                                                            <img src="assets/images/profill.jpg" className="card-img-top" style={{marginTop: "30px"}}/>
+                                                                            <img src="assets/images/hasan.png" className="card-img-top" style={{marginTop: "30px"}}/>
                                                                     </div>
                                                                     <div className="col-md-9">
                                                                         <div className="card w-90">
                                                                             <div className="card-body">
-                                                                                <h5 className="card-title pc">Commented by Numan Sinan </h5>
+                                                                                <h5 className="card-title pc">Commented by Hasan Hüseyin Güneş </h5>
                                                                                 <p className="card-text"> With supporting text below as a natural lead-in to additional content.
                                                                                         With supporting text below as a natural lead-in to additional content.
                                                                                         With supporting text below as a natural lead-in to additional content.

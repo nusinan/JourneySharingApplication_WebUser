@@ -76,16 +76,16 @@ render(){
                                                                 <div className="col-md-8">
                                                                     <div class="kart">
                                                                         <div className="col-md-3">
-                                                                                <img src={profile} className="card-img-top" style={{marginTop: "30px"}}/>
+                                                                                <img src="assets/images/fcuj-bvjrrs-alicja-koczaska-160x160.jpg" className="card-img-top" style={{marginTop: "30px"}}/>
                                                                         </div>
                                                                             <div className="col-md-9">
                                                                                     <div className="card w-90">
                                                                                         <div className="card-body">
-                                                                                            <h5 className="card-title "><b>Travelled Person</b> <label className="pc"> Numan Sinan</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Where : </b> <label className="pc">Kütahya</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Travelled Person</b> <label className="pc"> Ozan Duran</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Where : </b> <label className="pc">Ankara</label>  </h5>
                                                                                             <h5 className="card-title "><b>to : </b> <label className="pc"> Istanbul</label>  </h5>
-                                                                                            <h5 className="card-title "><b>E-Mail : </b> <label className="pc">numansinan00@gmail.com</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Phone : </b> <label className="pc">05530892463</label>  </h5>
+                                                                                            <h5 className="card-title "><b>E-Mail : </b> <label className="pc">example@example.com</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Phone : </b> <label className="pc">555 555 55 55</label>  </h5>
                                                                                             <h5 className="card-title "><b>Travel  Date : </b> <label className="pc">01.01.2020</label>  </h5>
                                                                                         </div>  
                                                                                     </div>
@@ -93,34 +93,34 @@ render(){
                                                                     </div>
                                                                     <div class="kart">
                                                                         <div className="col-md-3">
-                                                                                <img src={profile} className="card-img-top" style={{marginTop: "30px"}}/>
+                                                                                <img src="assets/images/fqkbxo2nkq0-sticker-mule-160x160.png" className="card-img-top" style={{marginTop: "30px"}}/>
                                                                         </div>
                                                                             <div className="col-md-9">
                                                                                     <div className="card w-90">
                                                                                         <div className="card-body">
-                                                                                            <h5 className="card-title "><b>Travelled Person</b> <label className="pc"> Numan Sinan</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Where : </b> <label className="pc">Kütahya</label>  </h5>
-                                                                                            <h5 className="card-title "><b>to : </b> <label className="pc"> Istanbul</label>  </h5>
-                                                                                            <h5 className="card-title "><b>E-Mail : </b> <label className="pc">numansinan00@gmail.com</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Phone : </b> <label className="pc">05530892463</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Travel  Date : </b> <label className="pc">01.01.2020</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Travelled Person</b> <label className="pc"> Anna Watson</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Where : </b> <label className="pc">İzmir</label>  </h5>
+                                                                                            <h5 className="card-title "><b>to : </b> <label className="pc"> Antalya</label>  </h5>
+                                                                                            <h5 className="card-title "><b>E-Mail : </b> <label className="pc">example@example.com</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Phone : </b> <label className="pc">555 555 55 55</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Travel  Date : </b> <label className="pc">04.02.2020</label>  </h5>
                                                                                         </div>  
                                                                                     </div>
                                                                             </div>
                                                                     </div>
                                                                     <div class="kart">
                                                                         <div className="col-md-3">
-                                                                                <img src={profile} className="card-img-top" style={{marginTop: "30px"}}/>
+                                                                                <img src="assets/images/hasan.png" className="card-img-top" style={{marginTop: "30px"}}/>
                                                                         </div>
                                                                             <div className="col-md-9">
                                                                                     <div className="card w-90">
                                                                                         <div className="card-body">
-                                                                                            <h5 className="card-title "><b>Travelled Person</b> <label className="pc"> Numan Sinan</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Where : </b> <label className="pc">Kütahya</label>  </h5>
-                                                                                            <h5 className="card-title "><b>to : </b> <label className="pc"> Istanbul</label>  </h5>
-                                                                                            <h5 className="card-title "><b>E-Mail : </b> <label className="pc">numansinan00@gmail.com</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Phone : </b> <label className="pc">05530892463</label>  </h5>
-                                                                                            <h5 className="card-title "><b>Travel  Date : </b> <label className="pc">01.01.2020</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Travelled Person</b> <label className="pc"> Hasan Hüseyin Güneş</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Where : </b> <label className="pc">İstanbul</label>  </h5>
+                                                                                            <h5 className="card-title "><b>to : </b> <label className="pc">Tunceli</label>  </h5>
+                                                                                            <h5 className="card-title "><b>E-Mail : </b> <label className="pc">example@example.com</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Phone : </b> <label className="pc">555 555 55 55</label>  </h5>
+                                                                                            <h5 className="card-title "><b>Travel  Date : </b> <label className="pc">09.06.2020</label>  </h5>
                                                                                         </div>  
                                                                                     </div>
                                                                             </div>

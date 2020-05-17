@@ -98,7 +98,7 @@ export default class Profile extends Component {
                                                                     <hr/> 
                                                                     <h5><b>Name : </b><label className="pc"><b>{this.state.name}</b></label></h5>
                                                                     <hr/>
-                                                                    <h5><b>E-Mail : </b><label className="pc"><b>{this.state.emailAddress}</b></label></h5>
+                                                                    <h5><b>Status : </b><label className="pc"><b>belirtilmedi</b></label></h5>  
                                                                     <hr/>
                                                                     </div>
                                                                     <div class="col-md-4" >
@@ -112,7 +112,8 @@ export default class Profile extends Component {
                                                                     <hr/>
                                                                     <h5><b>Birthday : </b><label className="pc"><b>{this.state.birthday}</b></label></h5>  
                                                                     <hr/>
-                                                                    <h5><b>Status : </b><label className="pc"><b>belirtilmedi</b></label></h5>  
+                                                                    <h5><b>E-Mail : </b><label className="pc" ><b>{this.state.emailAddress}</b></label></h5>
+                                                                    
                                                                     <hr/>   
                                                                     </div>
                                                                 </div>
@@ -122,17 +123,7 @@ export default class Profile extends Component {
                                                                         <p class="card-text pc" style={{padding:"20px"}}>
                                                                         <h5 style={{color:"black"}}><b>Addition : </b></h5>
                                                                             <p style={{padding:"24px"}}>
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
-                                                                            With supporting text below as a natural lead-in to additional content.
+                                                                            A biography is simply an account of someone’s life written by another person. A biography can be short in the case of few sentences biography, and it can also be long enough to fill an entire book. The short biographies explain a person’s basic life facts and their importance, but the long biographies would go an extra mile and include more details to make an interesting read. You may find yourself in a situation which requires you to write a biography of a famous person, a close friend or a relative.
                                                                             </p>
                                                                         </p>
                                                                             <h5><b>Şoförlük için Hesap Onay Durumu </b><label className="pk"><b>:  Onaylanmamış</b></label></h5>
